@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Integrador - Alisson Bruno</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,300&family=Be+Vietnam+Pro:wght@100;400;700&family=Fraunces:ital,opsz,wght@1,9..144,700&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    style="
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-family: 'Fraunces', serif;
+      font-family: 'Poppins', sans-serif;
+    "
+  >
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="padding: 15px; background-color: #f7f8f9"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Materiales/logo-verde.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          <strong> Flex</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          data-target="#navbarSupportedContent1"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#headerPlataforma">Producto</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#mainCaracteristicas"
+                style="padding-left: 30px"
+                class="sr-only"
+                >Caracterísitcas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#divPrecios" style="padding-left: 30px"
+                >Precios</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button
+              id="abrirModal"
+              class="ingresar btn btn-outline-primary me-2"
+              type="button"
+              style="color: black; border: none; left: 20px"
+            >
+              Ingresar
+            </button>
+            <button
+              class="btn btn-primary"
+              type="button"
+              style="background-color: #2ad167; border: none"
+            >
+              Registrarse
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="row d-flex justify-content-center"
+      style="margin: 50px"
+      id="headerPlataforma"
+    >
+      <div class="col-md-6 col-xl-5 align-self-center" style="height: auto">
+        <p
+          style="
+            background-color: #2ad167;
+            color: white;
+            border-radius: 20px;
+            width: 70px;
+            text-align: center;
+            margin-top: 15px;
+          "
+        >
+          NUEVO
+        </p>
+        <h1 style="font-size: 45px">
+          <strong>La plataforma para las empresas del futuro</strong>
+        </h1>
+        <p style="color: #93a1b6">
+          Productos pensados para los negocios del próximo siglo
+        </p>
+        <button
+          class="btn btn-primary"
+          type="button"
+          style="background-color: #2ad167; border: none"
+        >
+          Solicitar demo
+        </button>
+        <button
+          class="btn btn-outline-primary me-2"
+          type="button"
+          style="
+            width: 125px;
+            color: black;
+            margin-left: 0px;
+            border-color: #f7f8f9;
+          "
+        >
+          Registrarse
+        </button>
+      </div>
+      <div
+        class="col-md-6 col-xl-5 align-itens-end position-relative"
+        style="margin-top: 50px"
+      >
+        <img
+          src="Materiales/circle3-yellow.svg"
+          alt=""
+          style="position: absolute; top: -50px; left: -50px"
+        />
+        <img src="Materiales/header.jpg" alt="" class="img-fluid" />
+        <img
+          src="Materiales/dots3-blue.svg"
+          alt=""
+          style="position: absolute; bottom: -30px; right: -15px"
+        />
+      </div>
+    </header>
+
+    <main style="margin: 50px" id="mainCaracteristicas">
+      <section
+        class="row d-flex justify-content-center"
+        style="padding-top: 100px; padding-bottom: 40px"
+      >
+        <article class="col-md-4 col-lg-4" style="text-align: center">
+          <img
+            src="Materiales/mail-icon.svg"
+            alt="Imagen de capacitación"
+            style="
+              background-color: #2ad167;
+              width: 60px;
+              padding: 15px;
+              border-radius: 10px;
+            "
+          />
+          <h3 style="padding-top: 10px"><strong>Capacitación</strong></h3>
+          <p style="color: #93a1b6">
+            Asistencia y capacitación de primer nivel
+          </p>
+        </article>
+        <article class="col-md-4 col-lg-4" style="text-align: center">
+          <img
+            src="Materiales/analytics-icon.svg"
+            alt="Imagen de analíticas claras"
+            style="
+              background-color: #2ad167;
+              width: 60px;
+              padding: 15px;
+              border-radius: 10px;
+              height: 55px;
+            "
+          />
+          <h3 style="padding-top: 10px"><strong>Analíticas claras</strong></h3>
+          <p style="color: #93a1b6">
+            Disfruta de una dashboard de analíticas claras y accionables
+          </p>
+        </article>
+        <article class="col-md-4 col-lg-4" style="text-align: center">
+          <img
+            src="Materiales/people-icon.svg"
+            alt="Imagen de soluciones para equipos"
+            style="
+              background-color: #2ad167;
+              width: 60px;
+              padding: 15px;
+              border-radius: 10px;
+            "
+          />
+          <h3 style="padding-top: 10px">
+            <strong>Soluciones para equipos</strong>
+          </h3>
+          <p style="color: #93a1b6">
+            Facilita el accionar de tu empresa con nuestra suite de herramientas
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <div
+      class="row d-flex justify-content-center"
+      style="padding-bottom: 50px"
+      id="divPrecios"
+    >
+      <section class="col-9" style="padding-bottom: 20px">
+        <h2>
+          <strong>Precios flexibles que escalan contigo</strong>
+        </h2>
+        <p style="color: #93a1b6">
+          Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
+          prueba de 7 días en todos nuestros planes.
+        </p>
+      </section>
+
+      <div class="col-lg-3 col-11" style="margin: 10px">
+        <article
+          class="text-center"
+          style="background-color: #f7f8f9; padding: 15px"
+        >
+          <div>
+            <p style="border-radius: 20px; color: #2ad167">Precio</p>
+            <p
+              style="
+                border-radius: 20px;
+                color: #2ad167;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
+              Plan básico
+            </p>
+            <h3 class="card-title d-flex justify-content-center">
+              <span class="dolarSign pr-1" style="font-size: 20px">$</span
+              ><span style="font-size: 35px">10 </span
+              ><span class="mes position-relative" style="font-size: 20px"
+                >/mes</span
+              >
+            </h3>
+            <p>Facturado anualmente</p>
+          </div>
+          <ul class="text-left" style="list-style-type: none; padding: 5px">
+            <li class="d-flex">
+              <img
+                src="Materiales/check-circle-fill.svg"
+                alt=""
+                style="align-items: start"
+              />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                1GB de almacenamiento
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Dashboard completo
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Asistencia por correo
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Hasta 10 miembros
+              </p>
+            </li>
+          </ul>
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="background-color: #2ad167; border: none; width: 100%"
+          >
+            Solicitar demo
+          </button>
+        </article>
+      </div>
+      <div class="col-lg-3 col-11" style="margin: 10px">
+        <article
+          class="text-center"
+          style="background-color: #f7f8f9; padding: 15px"
+        >
+          <div>
+            <p style="border-radius: 20px; color: #2ad167">Precio</p>
+            <p
+              style="
+                border-radius: 20px;
+                color: #2ad167;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
+              Plan freelancer
+            </p>
+            <h3 class="card-title d-flex justify-content-center">
+              <span class="dolarSign pr-1" style="font-size: 20px">$</span
+              ><span style="font-size: 35px">99 </span
+              ><span class="mes position-relative" style="font-size: 20px"
+                >/mes</span
+              >
+            </h3>
+            <p>Facturado anualmente</p>
+          </div>
+          <ul class="text-left" style="list-style-type: none; padding: 5px">
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Características básicas
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Asistencia preferencial
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                100GB de almacenamiento
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Hasta 100 miembros
+              </p>
+            </li>
+          </ul>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="background-color: #2ad167; border: none; width: 100%"
+          >
+            Solicitar demo
+          </button>
+        </article>
+      </div>
+      <div class="col-lg-3 col-11" style="margin: 10px">
+        <article
+          class="text-center"
+          style="background-color: #f7f8f9; padding: 15px"
+        >
+          <div>
+            <p style="border-radius: 20px; color: #2ad167">Precio</p>
+            <p
+              style="
+                border-radius: 20px;
+                color: #2ad167;
+                font-size: 20px;
+                font-weight: bold;
+              "
+            >
+              Plan empresas
+            </p>
+            <h3 class="card-title d-flex justify-content-center">
+              <span class="dolarSign pr-1" style="font-size: 20px">$</span
+              ><span style="font-size: 35px">799 </span
+              ><span class="mes position-relative" style="font-size: 20px"
+                >/mes</span
+              >
+            </h3>
+            <p>Facturado anualmente</p>
+          </div>
+          <ul class="text-left" style="list-style-type: none; padding: 5px">
+            <li class="d-flex">
+              <img
+                src="Materiales/check-circle-fill.svg"
+                alt=""
+                style="align-items: start"
+              />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Caracterísitcas freelancer
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                1TB de almacenamiento
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                Asistencia telefónica 24/7
+              </p>
+            </li>
+            <li class="d-flex">
+              <img src="Materiales/check-circle-fill.svg" alt="" />
+              <p class="m-0 ml-2" style="padding-left: 15px">
+                miembros ilimitados
+              </p>
+            </li>
+          </ul>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            style="background-color: #2ad167; border: none; width: 100%"
+          >
+            Solicitar demo
+          </button>
+        </article>
+      </div>
+    </div>
+
+    <footer style="background-color: #2a3342">
+      <div class="text-center" style="padding-top: 50px">
+        <img
+          src="Materiales/logo-verde.png"
+          alt="Logo"
+          style="width: 40px; padding-top: 0px"
+        />
+
+        <strong style="font-size: 25px; color: white; padding-top: 50px"
+          >Flex</strong
+        >
+      </div>
+
+      <ul
+        style="
+          text-align: center;
+          list-style-type: none;
+          padding: 10px;
+          color: #93a1b6;
+        "
+        class="d-flex justify-content-center row"
+      >
+        <li class="col-s-12 col-lg-1">Producto</li>
+        <li class="col-s-12 col-lg-1">Funcionalidad</li>
+        <li class="col-s-12 col-lg-1">Precios</li>
+        <li class="col-s-12 col-lg-1">Recursos</li>
+        <li class="col-s-12 col-lg-1">Carreras</li>
+        <li class="col-s-12 col-lg-1">Ayuda</li>
+        <li class="col-s-12 col-lg-1">Privacidad</li>
+      </ul>
+      <p
+        class="d-flex justify-content-center"
+        style="padding-bottom: 50px; color: #93a1b6"
+      >
+        © 2022 Flex. Un producto ficticio de Senpai.
+      </p>
+    </footer>
+
+    <div
+      id="ventanaModal"
+      class="modal"
+      style="
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        color: white;
+      "
+    >
+      <section
+        class="modal-content"
+        style="
+          position: relative;
+          margin: auto;
+          padding: 20px;
+          background-color: #2a3342;
+          width: 500px;
+          height: 32em;
+        "
+      >
+        <section id="ingreso">
+          <span
+            style="
+              color: white;
+              margin-left: 400px;
+              font-size: 30px;
+              font-weight: bold;
+            "
+            class="close"
+            >X</span
+          >
+          <img
+            class="logo_blanco d-flex"
+            src="./Materiales/logo-blanco.png"
+            alt=""
+            style="
+              background-color: #2ad167;
+              width: 50px;
+              padding: 10px;
+              border-radius: 10px;
+              margin-left: 210px;
+            "
+          />
+          <div style="text-align: center">
+            <h2 class="ingresaCuenta">Ingresa a tu cuenta</h2>
+            <p class="resultados">y empieza a conseguir resultados</p>
+            <form class="form d-flex row justify-content-center" action="">
+              <label for="correo" style="text-align: start; margin-left: 110px"
+                >Correo</label
+              >
+              <input
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="tu-correo@senpaiacademy.com"
+                style="border-radius: 10px; width: 350px; padding: 7px"
+              />
+              <label
+                for="password"
+                class="contraseña"
+                style="text-align: start; margin-left: 110px; margin-top: 10px"
+                >Contraseña</label
+              >
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="******************"
+                style="border-radius: 10px; width: 350px; padding: 7px"
+              />
+
+              <div
+                class="recordarme"
+                style="margin-top: 10px; margin-bottom: 10px"
+              >
+                <input
+                  type="checkbox"
+                  name="Recordarme"
+                  id="Recordarme"
+                  style="text-align: start"
+                />
+                <label
+                  for="checkbox"
+                  class="recuerda"
+                  style="text-align: start; padding-right: 80px"
+                  >Recordarme</label
+                >
+                <a href="#" class="olvide" style="color: #2ad167"
+                  >Olvidé mi contraseña</a
+                >
+              </div>
+              <button
+                id="confirm"
+                class="b_ingresar"
+                class="btn btn-primary"
+                type="button"
+                style="
+                  background-color: #2ad167;
+                  border: none;
+                  color: white;
+                  border-radius: 10px;
+                  width: 350px;
+                  padding: 7px;
+                "
+                type="submit"
+              >
+                Ingresar
+              </button>
+            </form>
+          </div>
+          <p class="register" style="text-align: center; margin-top: 10px">
+            Aún no tienes cuenta?
+            <a href="#" style="color: #2ad167">Registrarse</a>
+          </p>
+        </section>
+      </section>
+    </div>
+
+    <script>
+      var modal = document.getElementById("ventanaModal");
+      var boton = document.getElementById("abrirModal");
+      var span = document.getElementsByClassName("close")[0];
+
+      boton.addEventListener("click", function () {
+        modal.style.display = "block";
+      });
+
+      span.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
